@@ -63,7 +63,7 @@ set(CMAKE_FIND_ROOT_PATH ${MICROCHIP_XC16_PATH})
 # routines to run as they still find some useful information.
 
 
-find_program(CMAKE_C_COMPILER "xc16-gcc")
+find_program(CMAKE_C_COMPILER "xc16-gcc" PATHS ${MICROCHIP_XC16_PATH}/bin)
 
 
 # bypass CMake compiler detection

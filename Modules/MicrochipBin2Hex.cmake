@@ -15,7 +15,7 @@
 function(bin2hex target)
     find_program(MICROCHIP_BIN2HEX
         NAMES ${_CMAKE_TOOLCHAIN_PREFIX}bin2hex bin2hex
-        HINTS ${_CMAKE_TOOLCHAIN_LOCATION}
+        HINTS ${_CMAKE_TOOLCHAIN_LOCATION}/bin
     )
 
     if(NOT MICROCHIP_BIN2HEX)
